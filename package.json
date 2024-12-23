@@ -1,0 +1,46 @@
+{
+  "author": {
+    "email": "dario@casertano.name",
+    "name": "Dario Casertano (DarCas)"
+  },
+  "bugs": {
+    "url": "https://github.com/DarCas/keyplex/issues"
+  },
+  "dependencies": {
+    "lodash.foreach": "^4.5.0",
+    "lodash.keys": "^4.2.0"
+  },
+  "description": "A versatile and modular library for managing namespaced key-value storage, with built-in support for localStorage and sessionStorage, and the ability to easily extend for custom storage solutions.",
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/DarCas/keyplex",
+  "keywords": [
+    "abstract-class",
+    "custom-storage",
+    "key-value",
+    "local-storage",
+    "namespace",
+    "namespaced-storage",
+    "session-storage",
+    "storage",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@darcas/keyplex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarCas/keyplex"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "deploy": "npm run build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
