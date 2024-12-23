@@ -13,6 +13,7 @@
   "description": "A versatile and modular library for managing namespaced key-value storage, with built-in support for localStorage and sessionStorage, and the ability to easily extend for custom storage solutions.",
   "devDependencies": {
     "@types/lodash": "^4.17.13",
+    "terser": "^5.37.0",
     "typescript": "^5.7.2"
   },
   "files": [
@@ -38,9 +39,10 @@
     "url": "https://github.com/DarCas/keyplex"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
-    "deploy": "npm run build && npm publish",
+    "build": "rm -rf ./dist && tsc && npm run minify",
+    "deploy": "npm run build && npm publish --access public",
+    "minify": "terser dist/index.js --source-map -c -m -o dist/index.min.js && unlink dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
