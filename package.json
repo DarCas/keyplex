@@ -32,7 +32,7 @@
     "typescript"
   ],
   "license": "MIT",
-  "main": "dist/index.min.js",
+  "main": "dist/index",
   "name": "@darcas/keyplex",
   "repository": {
     "type": "git",
@@ -44,5 +44,5 @@
     "minify": "terser dist/index.js --source-map -c -m -o dist/index.min.js && unlink dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
