@@ -2,7 +2,7 @@
 
 ![NPM Last Update](https://img.shields.io/npm/last-update/%40darcas%2Fkeyplex)
 ![NPM Version](https://img.shields.io/npm/v/%40darcas%2Fkeyplex)
-![NPM Downloads](https://img.shields.io/npm/dw/%40darcas%2Fkeyplex)
+![NPM Downloads](https://img.shields.io/npm/dy/%40darcas%2Fkeyplex)
 ![NPM License](https://img.shields.io/npm/l/%40darcas%2Fkeyplex)
 
 **KeyPlex** is a versatile and modular library for managing namespaced key-value storage. It provides an abstract class that can be extended to create custom storage solutions, as well as concrete implementations for `localStorage` and `sessionStorage`.
